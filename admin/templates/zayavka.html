@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+{{ super() }}
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+    <div id="chatbox">
+	    <div id="friendslist">    
+        <div id="friends">
+          {% for zayavka in zayakvi %}
+        	  <div class="friend">
+                <p>
+                	<strong>ПК №{{ zayavka['id_pc'] }}</strong>
+	                <span>IP {{zayavka['ip'] }}</span>
+                </p>
+                <div class="vse">
+                  <input class="button yes" type="button" value="Принять">
+                  <input class="button no" type="button" value="Отказать">
+                </div>
+            </div>     
+            {% endfor %}
+           
+          </div>                
+        </div>	       
+      </div>	
+{% endblock %}

@@ -1,0 +1,39 @@
+{
+	"QCustomSlideMenu": [{
+		"name": "leftMenu",
+		"defaultSize": [{
+			"width": 0,
+			"height": "parent"
+		}],
+		"collapsedSize": [{
+			"width": 0,
+			"height": "parent"
+		}],
+		"expandedSize": [{
+			"width": 505,
+			"height": "parent"
+		}],
+		"toggleButton": [{
+			"buttonName": "pushButton_5",
+            "icons": [{
+                  "whenMenuIsCollapsed": ":/icons/img/burger.svg",
+                  "whenMenuIsExpanded": ":/icons/img/left-arrow-backup-2-svgrepo-com.svg"
+              }]
+		}],
+		"menuTransitionAnimation": [{
+			"animationDuration": 800,
+			"animationEasingCurve": "OutBack"
+			}],
+			"whenExpanding": [{
+				"animationDuration": 500,
+				"animationEasingCurve": "OutInBack"
+			}]
+		}],
+
+		"floatPosition": [
+			{
+				"relativeTo": "centralwidget",
+				"position": "top-left"
+			}
+		]
+	}
